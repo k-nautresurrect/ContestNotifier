@@ -1,58 +1,37 @@
-.target{
-    margin-left: 20px;
+.target {
+  margin-left: 20px;
 }
-.set-margin{
-    margin-right: 20px;
+.set-margin {
+  margin-right: 20px;
 }
-nav{
-    background-color: lightslategray;
+nav {
+  background-color: #202020;
 }
-.box{
-
-	width: 300px;
-
-	height: 50px;
-
-	background-color: white;
-
-	border-radius: 30px;
-
-	display: flex;
-
-	align-items: center;
-
-	padding: 20px;
-
+.box {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 .box > i {
-
-	font-size: 20px;
-
-	color: #777;
-
+  font-size: 20px;
+  color: #777;
 }
 
-.box > input{
-    
-
-	flex: 1;
-
-	height: 40px;
-
-	border: none;
-
-	outline: none;
-
-	font-size: 18px;
-
-	padding-left: 10px;
-    width: 300px;
-
+.box > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+  width: 300px;
+  overflow: hidden;
 }
-i{
-    
-    color: white;
-    
+i {
+  color: white;
 }
-

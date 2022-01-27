@@ -27,8 +27,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="8.8707218"
-     inkscape:cx="28.126234"
-     inkscape:cy="23.729749"
+     inkscape:cx="23.166097"
+     inkscape:cy="26.209818"
      inkscape:window-width="1366"
      inkscape:window-height="718"
      inkscape:window-x="0"
@@ -42,29 +42,17 @@
      inkscape:groupmode="layer"
      id="layer1">
     <circle
-       style="fill:#333333;stroke-width:0.947085"
+       style="fill:#808080;stroke-width:0.947085"
        id="path31"
        cx="24.003092"
        cy="24.063772"
        r="24" />
     <circle
-       style="fill:#ececec;stroke-width:0.789237"
+       style="fill:#ececec;stroke-width:0.749775"
        id="path31-3"
        cx="24"
        cy="24"
-       r="20" />
-    <circle
-       style="fill:#333333;fill-opacity:1;stroke-width:0.749775"
-       id="path31-3-6"
-       cx="24"
-       cy="24"
        r="19" />
-    <circle
-       style="fill:#ececec;fill-opacity:1;stroke-width:0.63139"
-       id="path31-3-6-5"
-       cx="24"
-       cy="24"
-       r="16" />
     <circle
        style="fill:#e6005d;fill-opacity:1;stroke-width:0.591927"
        id="path31-3-6-7"

@@ -1,8 +1,9 @@
-.target {
-  margin-left: 20px;
-}
 .set-margin {
   margin-right: 20px;
+}
+
+.navbar {
+  padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .box {

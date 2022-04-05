@@ -1,32 +1,47 @@
-const URL = "https://kontests.net/api/v1/all/"
-async function required(){
-    const response = await fetch(URL)
-    const users = await response.json()
-    console.log(users[2].name)
-    for (let i = 0; i<users.length;i++){
-        if (users[i].in_24_hours = 'YES'){
-            const name = users[i].name
-            const url = users[i].url
-            const element = document.createElement('div')
-            const matter = document.createTextNode(name)
-            var a = document.createElement('a')
-            var link = document.createTextNode('LINK')
-            a.appendChild(link)
-            a.title = 'LINK'
-            a.href = url
-            
-            element.appendChild(matter)
-            
-            const list1 = document.getElementById("div_id")
-            list1.appendChild(element)
-            list1.appendChild(a)
-    }
-    
-        // const div_section = document.createElementbyID('div')
-        // div_section.setAttribute('id','div_id')
-        // div_section.innerHTML = '<h1>name</h1><br><button>url</button><br>'
-    }
+const URL = "https://kontests.net/api/v1/all/";
+let data = [];
+let searchData = [];
+const home = document.getElementById("home");
+const hackerrank = document.getElementById("HackerRank");
+const codechef = document.getElementById("CodeChef");
+const codeforces = document.getElementById("CodeForces");
+const atcoder = document.getElementById("AtCoder");
+let details = document.getElementById("details");
+const search = document.querySelector("[data-search]");
 
+async function fetchall() {
+  const response = await fetch(URL);
+  data = await response.json();
+//   console.log(data);
+  searchData = await data.map((value) => {
+    return { name: value.name, site: value.site };
+  });
+//   console.log(searchData);
+  for (let i = 0; i < data.length; i++) {
+    if ((data[i].in_24_hours = "YES")) {
+      const name = data[i].name;
+      const url = data[i].url;
+
+      const upComing = document.createElement("tr");
+      upComing.className = "upcoming";
+
+      var a = document.createElement("a");
+      var link = document.createTextNode("visit");
+      a.appendChild(link);
+      a.title = "visit";
+      a.href = url;
+      a.className = "links text-dark";
+      a.innerHTML = name;
+
+      upComing.innerHTML = `<td><a href="${url}" title="visit" class="links text-dark">${name}</a></td>`;
+
+      const list1 = document.getElementById("div_id");
+      list1.appendChild(upComing);
+    }
+  }
 }
 
-required()
+
+
+fetchall();
+

@@ -34,3 +34,32 @@
 i {
   color: white;
 }
+
+p {
+  display: inline;
+  padding: 0.5rem;
+}
+
+.links {
+  text-decoration: none;
+}
+
+td {
+  text-align: center;
+}
+
+.fa-plus {
+  color: black;
+}
+
+.fa-times {
+  color: black;
+}
+
+i.fa-times {
+  display: none;
+}
+
+collpse:active {
+  color: aquamarine;
+}

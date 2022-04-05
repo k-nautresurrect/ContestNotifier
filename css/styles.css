@@ -1,0 +1,65 @@
+.set-margin {
+  margin-right: 20px;
+}
+
+.navbar {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.box {
+  width: 60%;
+  height: 50px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.box > i {
+  font-size: 20px;
+  color: #777;
+}
+
+.box > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px;
+  width: 60%;
+  overflow: hidden;
+}
+i {
+  color: white;
+}
+
+p {
+  display: inline;
+  padding: 0.5rem;
+}
+
+.links {
+  text-decoration: none;
+}
+
+td {
+  text-align: center;
+}
+
+.fa-plus {
+  color: black;
+}
+
+.fa-times {
+  color: black;
+}
+
+i.fa-times {
+  display: none;
+}
+
+collpse:active {
+  color: aquamarine;
+}
